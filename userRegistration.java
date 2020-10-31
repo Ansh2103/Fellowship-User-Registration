@@ -70,7 +70,7 @@ public class userRegistration {
     public boolean checkPassword() {
         System.out.println("Enter the Password");
         String phoneNumber = sc.next();
-        if(phoneNumber.matches( "[0-9a-zA-Z]{8,}") == true ){
+        if(phoneNumber.matches( "^(?=.*[A-Z])(?=.*[a-z]).{8,}$" ) == true ){
             return true;
         }
         else {
