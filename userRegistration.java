@@ -48,7 +48,7 @@ public class userRegistration {
     public boolean checkEmail() {
         System.out.println("Enter the email");
         String email = sc.next();
-        if(email.matches( "^[a-zA-Z]+([._+-][a-zA-Z]+)*[@][A-Za-z]+[.][a-zA-Z]+([.][a-zA-Z]{2})*$" ) == true){
+        if(email.matches( "^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*[@][0-9A-Za-z]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})*$" ) == true){
             return true;
         }
         else {
