@@ -68,7 +68,7 @@ public class userRegistration {
     }
 
     public boolean checkPassword() {
-        System.out.println("Enter the Password");
+        System.out.println("Please Enter the Password");
         String phoneNumber = sc.next();
         if(phoneNumber.matches( "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$" ) == true ){
             return true;
