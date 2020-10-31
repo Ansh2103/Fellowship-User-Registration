@@ -23,6 +23,13 @@ public class userRegistration {
         } else {
             System.out.println("Enter valid phone number");
         }
+
+        userRegistration obj3 = new userRegistration();
+        if(obj3.checkPassword() == true) {
+            System.out.println("Entered password is in correct format");
+        } else {
+            System.out.println("Enter valid phone number");
+        }
     }
 
     public boolean checkName() {
@@ -53,6 +60,17 @@ public class userRegistration {
         System.out.println("Enter the Phone Number");
         String phoneNumber = sc.next();
         if(phoneNumber.matches( "^[0-9]{1,2}[ ][0-9]{10}$") == true ){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean checkPassword() {
+        System.out.println("Enter the Password");
+        String phoneNumber = sc.next();
+        if(phoneNumber.matches( "[0-9a-zA-Z]{8,}") == true ){
             return true;
         }
         else {
